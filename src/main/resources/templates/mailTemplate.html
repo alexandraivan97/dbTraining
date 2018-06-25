@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback mail template</title>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i|Montserrat:300,300i,400,400i,700,700i" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main" style="width: auto;max-width: 100vw;min-width: 20vw;height: 100%;margin: 10px auto;box-shadow: 0 5px 40px -15px rgba(0, 0, 0, .8);color: #212121;font-family: 'Montserrat', sans-serif;font-size: 14px;border: 0px solid rgba(0, 0, 0, .3);border-radius: 2px;text-align: center;padding: 3vh 3vw">
+        <span class="logo" style="display: block;width: 80px;box-shadow: 0 0 30px -5px rgba(0, 0, 0, .15);height: 80px;margin: 0 auto 20px auto;">
+            <a href="https://db-training-enrollment.firebaseapp.com">
+                <img width="80px" height="80px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Deutsche_Bank_logo_without_wordmark.svg/2000px-Deutsche_Bank_logo_without_wordmark.svg.png" alt="Deutsche Bank Logo" />
+            </a>
+        </span>
+
+        <span class="banner" style="font-weight: 600;text-transform: uppercase;padding: 6px 14px;border: 1px solid rgba(33, 33, 33, .2);border-radius: 2px;cursor: pointer;">
+            <a href="" style="text-decoration: none;color: #08125b;">DB Enrollment</a>
+        </span>
+
+        <h3 th:text="${message}" style="margin-top: 40px;font-weight: 400;text-shadow: 0 1px 2px rgba(21, 21, 21, .15);font-family: 'Raleway';">Mesaj</h3>
+        <div style="width: 100%; height: 50px"></div>
+        <hr style="width: 30px;border: 0.5px solid rgba(21, 21, 21, .3);">
+        <div style="width: 100%; height: 5px;"></div>
+        <div class="footer" style="font-family: 'Inconsolata';font-size: 12px; color: #212121;">Copyright &copy; Deutsche Bank 2018</div>
+    </div>
+</body>
+
+</html>
